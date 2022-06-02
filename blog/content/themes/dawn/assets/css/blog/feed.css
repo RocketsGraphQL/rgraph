@@ -1,0 +1,88 @@
+.feed {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 1.5rem 0;
+    line-height: 1;
+}
+
+.feed:hover .feed-title {
+    opacity: 0.8;
+}
+
+.feed:hover .feed-right {
+    margin-right: 1.6rem;
+}
+
+.feed:hover .feed-icon {
+    transform: translateX(0.4rem);
+}
+
+.feed + .feed {
+    border-top: 1px solid var(--light-gray-color);
+}
+
+.feed + .feed.feed-paged {
+    margin-top: 3rem;
+    border-top: 0;
+}
+
+.feed-calendar {
+    display: flex;
+    margin-right: 1.5rem;
+    min-width: 45px;
+    color: var(--brand-color);
+    font-size: 1.1rem;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.feed-calendar-month {
+    margin-right: 0.4rem;
+    text-transform: uppercase;
+}
+
+.feed-title {
+    flex-grow: 1;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-right: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.feed-right {
+    display: flex;
+    align-items: center;
+    transition: margin 0.2s var(--animation-base);
+}
+
+.feed-visibility {
+    margin-right: 1rem;
+    width: 16px;
+    height: 16px;
+    color: var(--orange-color);
+}
+
+.feed-visibility-public {
+    display: none;
+}
+
+.feed-length {
+    color: var(--secondary-text-color);
+    font-size: 1.4rem;
+    white-space: nowrap;
+}
+
+.feed-icon {
+    position: absolute;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    color: var(--secondary-text-color);
+    transition: transform 0.2s var(--animation-base);
+    transform: translateX(2rem);
+}

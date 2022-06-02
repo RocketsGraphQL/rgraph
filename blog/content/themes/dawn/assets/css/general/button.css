@@ -1,0 +1,66 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    height: 36px;
+    outline: none;
+    border: 1px solid var(--light-gray-color);
+    color: var(--brand-color);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background-color: var(--white-color);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button:hover {
+    border-color: var(--mid-gray-color);
+    opacity: 1;
+}
+
+.button .icon-loading {
+    display: none;
+}
+
+.button.loading {
+    text-indent: -9999px;
+}
+
+.button.loading .icon-loading {
+    display: block;
+}
+
+.button-secondary {
+    color: var(--darker-gray-color);
+}
+
+.button-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: 0;
+    color: var(--darker-gray-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button-icon:hover .icon {
+    opacity: 0.8;
+}
+
+.button-text {
+    padding: 0;
+    outline: none;
+    border: 0;
+    color: var(--darker-gray-color);
+    line-height: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}

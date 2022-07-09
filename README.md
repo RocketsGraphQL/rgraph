@@ -17,8 +17,8 @@
 - [Join Community](https://discord.gg/Zv2D5h6kkK)
 
 # Introduction
-<!-- 
-<img src="https://github.com/authorizerdev/authorizer/blob/main/assets/authorizer-architecture.png" style="height:20em"/> -->
+
+<img src="./images/Illustration.png" style="height:30em"/>
 
 #### We offer the following functionality
 

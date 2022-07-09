@@ -2,11 +2,7 @@
 import axios from "axios";
 import Cookies from 'js-cookie';
 
-axios.defaults.withCredentials = true;
-
-window.addEventListener('load', (event) => {
-    console.log('page is fully loaded', window.location.href);
-});
+axios.defaults.withCredentials = false;
 
 (async () => {
     if (window.location.href == Cookies.get('githubRedirectUrl')) {

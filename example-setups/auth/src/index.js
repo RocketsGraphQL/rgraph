@@ -3,16 +3,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Login } from "./components/login";
 import { Signup } from "./components/signup";
-import { GithubSuccess } from "./components/github";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import App from "./App";
-// import { RApolloProvider } from "@kaushik_varanasi/react-apollo";
+import { RApolloProvider } from "@rocketgraphql/react-apollo";
 import { auth } from "./utils/rockets";
-import { RApolloProvider } from "./utils/rock";
 
 ReactDOM.render(
   <React.StrictMode>
-    <RApolloProvider auth={auth} gqlEndpoint="https://hasura-1jxcgtk.rocketgraph.app/v1/graphql">
+    <RApolloProvider auth={auth} gqlEndpoint="https://hasura-1cbijog.rocketgraph.app/v1/graphql">
       <Router>
           <Switch>
             <Route exact path="/login">
@@ -23,9 +21,6 @@ ReactDOM.render(
             </Route>
             <Route exact path="/">
               <App />
-            </Route>
-            <Route exact path="/success">
-              <GithubSuccess />
             </Route>
           </Switch>
       </Router>

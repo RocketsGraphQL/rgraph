@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import { gql, useSubscription, useMutation } from "@apollo/client";
+import { Link } from "react-router-dom";
+// import { auth } from "./utils/rockets";
+import { gql, useQuery, useMutation, useSubscription } from "@apollo/client";
 
 const GET_TODOS = gql`
   subscription {
     todos {
       id
+      created_at
       name
     }
   }
@@ -23,6 +26,7 @@ function App() {
   const [insertTodo] = useMutation(INSERT_TODO);
   const [todoName, setTodoName] = useState("");
 
+  console.log("Checking empty data: ", data);
   if (loading) {
     return <div>Loading</div>;
   }
@@ -43,27 +47,26 @@ function App() {
                 },
               });
             } catch (error) {
-              alert("Error creating todo");
               console.error(error);
-              return;
+              return alert("Error creating todo", todoName);
             }
             alert("Todo created");
-            setTodoName("");
           }}
         >
           <input
             type="text"
+            id="inputTodo"
             placeholder="todo"
             value={todoName}
             onChange={(e) => setTodoName(e.target.value)}
           />
-          <button>Add todo</button>
+          <button id="createTodo">Create todo</button>
         </form>
       </div>
-      {!data ? (
+      {!data.todos.length ? (
         "no data"
       ) : (
-        <ul>
+        <ul id="todosList">
           {data.todos.map((todo) => {
             return <li key={todo.id}>{todo.name}</li>;
           })}

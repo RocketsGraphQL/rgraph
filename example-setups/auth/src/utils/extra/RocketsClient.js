@@ -8,9 +8,16 @@ export default class RocketsClient{
         }
         
         this.baseURL = config.baseURL;
+        console.log(this.baseURL);
 
         this.auth = new RocketsAuth({
             baseURL: config.baseURL,
         })
+
+        if (this.auth.isAuthenticated()) {
+            // if this is authenticated, keep refreshing tokens
+            this.auth.refresh()
+            setTimeout(() => this.auth.refresh(), 5 * 60)
+        }
     }
 }

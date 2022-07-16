@@ -2,7 +2,7 @@ import { createClient } from "@rocketgraphql/rocketgraph-js-sdk";
 import Cookies from 'js-cookie';
 
 const config = {
-  baseURL: "http://localhost:7000/api",
+  baseURL: "https://backend-REPLACE",
 };
 
 console.log("loading from extra");

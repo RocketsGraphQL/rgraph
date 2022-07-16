@@ -6,7 +6,7 @@ import { RApolloProvider } from "@kaushik_varanasi/react-apollo";
 
 ReactDOM.render(
   <React.StrictMode>
-    <RApolloProvider gqlEndpoint="https://hasura-qlvtp9u.rocketgraph.app/v1/graphql">
+    <RApolloProvider gqlEndpoint="https://gqlEndpoint/v1/graphql">
       <Router>
           <Switch>
             <Route exact path="/">

@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://authorizer.dev">
+  <a href="https://twitter.com/RGraphql">
     <img alt="Logo" src="https://pbs.twimg.com/profile_images/1485256609064701955/fk6b3wos_400x400.jpg" width="60" />
   </a>
 </p>

@@ -109,7 +109,9 @@ Follow this [documentation](https://docs.rocketgraph.io/setup) to get started
 ### Code setup
 For your front-end, you can start with the already provided [examples](https://github.com/RocketsGraphQL/example-setups). Just download and `npm run dev`. Todos is without authentication, auth is with authentication.
 
-<img src="./images/api.gif"/>
+<p align="center">
+<img align="center" src="./images/api.gif"/>
+</p>
 
 
 ## Testing

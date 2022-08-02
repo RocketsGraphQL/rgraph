@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://twitter.com/RGraphql">
-    <img alt="Logo" src="./images/Light.png" width="60" />
+    <img alt="Logo" src="./images/Light.png" />
   </a>
 </p>
 <h1 align="center">
-  Rocketgraph :rocket:
+  RocketGraphQL :rocket:
 </h1>
 
 <h3 align="center">

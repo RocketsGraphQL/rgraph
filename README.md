@@ -43,7 +43,7 @@
 
 # Introduction
 
-<img src="./images/api.gif"/>
+<img src="./images/code.png"/>
 
 <br />
 
@@ -59,7 +59,6 @@
 
 <br />
 
-<img src="./images/code.png"/>
 
 <br />
 
@@ -97,7 +96,8 @@ This guide helps you get started with rocketgraph and setting up your backend in
 
 ### Create account
 Your first instance is free for 14 days. No credit card.
-So go to https://rocketgraph.io/ and create account. Then on the dashboard click new project. Wait for a few seconds for the instance to boot up and load the software.
+So go to [the signup page](https://rocketgraph.io/signup) and create account. Then on the dashboard click new project. Wait for a few seconds for the instance to boot up and load the software.
+<img src="./images/signup.png"/>
 
 ### Project setup
 You can see your hasura console url. There you can manage your database.
@@ -109,6 +109,7 @@ Follow this [documentation](https://docs.rocketgraph.io/setup) to get started
 ### Code setup
 For your front-end, you can start with the already provided [examples](https://github.com/RocketsGraphQL/example-setups). Just download and `npm run dev`. Todos is without authentication, auth is with authentication.
 
+<img src="./images/api.gif"/>
 
 
 ## Testing

@@ -2,16 +2,9 @@ import { createClient } from "@rocketgraphql/rocketgraph-js-sdk";
 import Cookies from 'js-cookie';
 
 const config = {
-  baseURL: "https://backend-REPLACE",
+  baseURL: "https://backend-0FJMZME.rocketgraph.app/auth",
 };
 
-console.log("loading from extra");
-if (Cookies.get("jwt")) {
-  console.log("got it");
-} else {
-   console.log("not got it");
-}
 const { auth } = createClient(config);
 
-console.log("auth: ", auth);
 export { auth };

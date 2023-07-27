@@ -27,7 +27,7 @@
 </p>
 
 <p>
-  <img src="./images/inside.gif" width="100%">
+  <img src="./images/rocketgraph_dashboard_15fps.gif" width="100%">
 </p>
 
 <br />
@@ -101,18 +101,88 @@ So go to [the signup page](https://rocketgraph.io/signup) and create account. Th
 
 ### Project setup
 You can see your hasura console url. There you can manage your database.
-Follow this [documentation](https://docs.rocketgraph.io/setup) to get started
 
-<img src="./images/look.png"/>
+<img src="./images/hasura_photo.png"/>
+
+And links to your Backend URLs
+<img src="./images/backend_photo.png"/>
 
 
-### Code setup
-For your front-end, you can start with the already provided [examples](https://github.com/RocketsGraphQL/example-setups). Just download and `npm run dev`. Todos is without authentication, auth is with authentication.
+### Code setup TLDR version
+
+For your front-end, you can start with the already provided [examples](https://github.com/RocketsGraphQL/example-setups). Just download and `npm run dev`. `todos` is without authentication, `auth` is with authentication.
 
 <p align="center">
-<img align="center" src="./images/api.gif"/>
+<img align="center" src="./images/rocketgraph_dashboard_15fps.gif"/>
 </p>
+<br />
 
+### Code setup (just the basics)
+
+```bash
+npx create-react-app todos
+cd todos
+```
+
+```bash
+yarn add react-router-dom react-router
+yarn add @apollo/client @rocketgraphql/react-apollo @rocketgraphql/rocketgraph-js-sdk graphql
+```
+
+Next create `src/utils/config.js` and add the following:
+
+```js
+import { createClient } from "@rocketgraphql/rocketgraph-js-sdk";
+ 
+const config = {
+  baseURL: "https://backend-XXXXXXX.rocketgraph.app/auth",
+};
+ 
+const { auth } = createClient(config);
+ 
+export { auth };
+```
+
+Replace the `backend-XXX` URL with the url on your Rocketgraph dashboard. Congratulations, you have setup the basics required to use Rocketgraph.
+
+
+### RApolloProvider
+
+Use GraphQL in your application, `index.js` by wrapping your App in RApolloProvider as follows:
+
+```js
+// src/index.js
+import React from "react";
+import ReactDOM from "react-dom";
+import { ChakraProvider } from '@chakra-ui/react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import App from "./App";
+import Message from "./components/Message"
+import Login from "./components/Login"
+import Signup from "./components/Signup"
+
+// Rocketgraph providers
+import { RApolloProvider } from "@rocketgraphql/react-apollo";
+import { auth } from "./utils/config";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <ChakraProvider>
+      <RApolloProvider auth={auth} gqlEndpoint="https://hasura-AEF0WTE.rocketgraph.app/v1/graphql">
+        <Router>
+          <Routes>
+            <Route path="/login" element={<Login />}/>
+            <Route path="/signup" element={<Signup />}/>
+            <Route path="/messages" element={<Message />} />
+            <Route path="/" element={<App />} />
+          </Routes>
+        </Router>
+      </RApolloProvider>
+    </ChakraProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+```
 
 ## Testing
 

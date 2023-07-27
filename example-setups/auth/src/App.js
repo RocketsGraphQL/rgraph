@@ -26,7 +26,6 @@ function App() {
   const [insertTodo] = useMutation(INSERT_TODO);
   const [todoName, setTodoName] = useState("");
 
-  console.log("todos: ", data);
   if (loading) {
     return <div>Loading</div>;
   }

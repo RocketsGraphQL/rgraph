@@ -184,6 +184,26 @@ ReactDOM.render(
 );
 ```
 
+Then in your App.js file
+
+```js
+import { gql, useSubscription } from "@apollo/client";
+
+const GET_TODOS = gql`
+    subscription {
+      users {
+        id
+        email
+      }
+    }
+`;
+
+export default function Application() {
+  const [ data, loading] = useSubscription(GET_TODOS);
+}
+
+```
+
 ## Testing
 
 - We use cypress tests on all the examples provided.

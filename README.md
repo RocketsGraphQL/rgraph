@@ -204,9 +204,16 @@ export default function Application() {
 
 ```
 
+## Run on your machine (self-hosted)
+
+See : https://github.com/RocketsGraphQL/hasura-batteries
+
+To run this as a standalone docker container.
+
 ## Testing
 
-- We use cypress tests on all the examples provided.
+- We use cypress tests on all the examples provided. Run them using `cypress`
+- We use unit tests and CI pipelines, see: https://github.com/RocketsGraphQL/hasura-batteries
 
 
 

@@ -23,7 +23,7 @@
 
 <p align="center">
   <a href="https://twitter.com/RGraphql"><img src="https://img.shields.io/twitter/follow/RgraphQl?style=social" alt="Twitter follow"></a>
-  <a href="https://twitter.com/RGraphql"><img src="https://img.shields.io/badge/release-v0.1.5-success" alt="Release"></a>
+  <a href="https://twitter.com/RGraphql"><img src="https://img.shields.io/badge/release-v0.3.0-success" alt="Release"></a>
 </p>
 
 <p>

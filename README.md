@@ -32,7 +32,7 @@
 
 <br />
 
-**Rocketgraph** is a complete Backend. When you create a project on [rocketgraph](https://rocketgraph.io/) you are provided with [Postgres Instance](https://www.postgresql.org/), [Hasura console](https://hasura.io/), Automated backend deployments with Git, and a full blown authentication system built in. It uses the open-source [Hasura Batteries](https://github.com/RocketsGraphQL/hasura-batteries) to power it's authentication service.
+**Rocketgraph** gives superpowers to your web applications. Get Authentication, realtime GraphQL, Serverless functions and a Postgres DB right from day 0. When you create a project on [rocketgraph](https://rocketgraph.io/) you are provided with [Postgres Instance](https://www.postgresql.org/), [Hasura console](https://hasura.io/) to get a GraphQL API and manage granular authorisation rules, Automated backend deployments with Git, and a full blown authentication system built in. It uses the open-source [Hasura Batteries](https://github.com/RocketsGraphQL/hasura-batteries) to power it's authentication service.
 
 ## Table of contents
 
@@ -49,13 +49,14 @@
 
 ### We offer the following functionality
 
-- ✅ Sign-in / Sign-up with email ID and password
-- ✅ Secure session management with cookies refreshed periodically
-- ✅ Email verification
-- ✅ Database: 8gb Postgres db
-- ✅ Social logins (Google, Github, Facebook, more coming soon)
-- ✅ Role-based access management
-- ✅ Automated backend deployments. Bring your own code and your github commits are auto deployed as Lambda functions.
+- 🔒 Authentication using email/password
+- 👬 Authentication using social logins
+- 🪄 Authentication using OTP and magic link
+- ⛈️ Server-less functions: Bring your own code and run it as thin AWS lambdas.
+- 👨‍💻 Your code will be automatically picked up from your Github commits by our Github bot and deployed as Lambdas
+- 🦾 AWS RDS support: 8GB PostgreSQL
+- 👩‍🚀 Postgres Logs using `pgAudit`
+- 🍪 Secure session management with cookies refreshed automatically
 
 <br />
 
@@ -203,6 +204,15 @@ export default function Application() {
 }
 
 ```
+
+## Postgres Logs using pgAudit
+
+In your logs dasboard you can write complex queries to query your logs. Use [cloudwatch logs syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html)
+
+<p>
+  <img src="./images/logger_demo.gif" width="100%">
+</p>
+
 
 ## Run on your machine (self-hosted)
 

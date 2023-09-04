@@ -110,3 +110,6 @@ This is the first stable release of [Rocketgraph](https://rocketgraph.io/). It c
 3. Changed AWS credentials
 3. Project creation workflow
 
+### Apr 25, 2023
+1. Added route for instance state update
+2. Track RDS events from AWS

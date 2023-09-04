@@ -161,3 +161,8 @@ Serverless functions and Serverless Github App (#6)
 3. Add filename to instance
 
 * tweak webhook endpoint
+
+### Mar 29, 2022
+
+- init monorepo for Frontend
+- Support for project creation using docker containers for Postgres, Hasura and Hasura-batteries

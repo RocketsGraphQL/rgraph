@@ -96,6 +96,26 @@ This is the first stable release of [Rocketgraph](https://rocketgraph.io/). It c
 3. Change access keys
 4. new env variables for serverless
 
+### Jun 8, 2023
+
+Support for stripe integration for Hasura-batteries
+
+### May 25, 2023
+
+Twilio Support for hasura-batteries
+
+* Twilio: added sendOTP and verifyOTP methods
+
+* Twilio: Added routes for OTP signin
+
+* verify with otp and login working
+
+* trying tests
+
+* feature/twilio-otp-login
+
+* only create user if OTP is approved
+
 ### May 19, 2023
 1. add headers to requests
 2. Function roles

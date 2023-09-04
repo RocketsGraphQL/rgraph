@@ -2,10 +2,12 @@
 ### Aug 24, 2023
 1. add link to postgres logger on hero page
 2. correct dates to logger time selection
+3. Remove service linked role and add correct DB parameter group to RDS instance. Add hooks to check instance on every event for the postgresURL
 
 ### Aug 16, 2023
 1. remove search 
 2. Better CSS for Query templates
+3. add DB Parameter group to RDS by default
 
 ### Aug 15, 2023
 1. Add demo URL for public display of Postgres logger

@@ -1,3 +1,9 @@
+### Aug 13, 2023
+1. Add 2 mins to timeframes
+2. Add queries with filtering
+3. Human readable timestamps
+4. remove @ptr
+
 # ⚓ <a id="my-header"></a> August 1st, 2023 - v0.2.0 stable
 ## 📢 What’s new?
 

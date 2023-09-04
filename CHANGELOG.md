@@ -96,8 +96,17 @@ This is the first stable release of [Rocketgraph](https://rocketgraph.io/). It c
 3. Change access keys
 4. new env variables for serverless
 
+### May 19, 2023
+1. add headers to requests
+2. Function roles
+3. New API endpoints for serverless
 
-### Jul 6, 2022
+### May 18, 2023
+1. Registration service for registering endpoints for customer's projects
 
-
+### May 12, 2023
+1. Added hooks for AWS RDS and EC2 booting events
+2. Coupled routes based on functionality
+3. Changed AWS credentials
+3. Project creation workflow
 

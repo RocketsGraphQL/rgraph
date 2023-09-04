@@ -1,4 +1,8 @@
 
+### Aug 24, 2023
+1. add link to postgres logger on hero page
+2. correct dates to logger time selection
+
 ### Aug 16, 2023
 1. remove search 
 2. Better CSS for Query templates

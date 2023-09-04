@@ -17,12 +17,17 @@
 2. Fetch logs from backend.
 3. Query templates for logger
 4. Code editor for logger queries using Cloudwatch syntax
+5. added timeframes for logs
 
 ### Aug 13, 2023
 1. Add 2 mins to timeframes
 2. Add queries with filtering
 3. Human readable timestamps
 4. remove @ptr
+
+### Aug 10, 2023
+1. add basic logging function that queries Cloudwatchlogs and fetches the logs
+
 
 # ⚓ <a id="my-header"></a> August 1st, 2023 - v0.2.0 stable
 ## 📢 What’s new?

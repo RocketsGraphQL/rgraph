@@ -1,3 +1,8 @@
+
+### Aug 12, 2023
+1. Add logging feature for postgres on the frontend
+2. Fetch logs from backend.
+
 ### Aug 13, 2023
 1. Add 2 mins to timeframes
 2. Add queries with filtering

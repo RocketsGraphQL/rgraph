@@ -1,4 +1,8 @@
 
+### Aug 16, 2023
+1. remove search 
+2. Better CSS for Query templates
+
 ### Aug 15, 2023
 1. Add demo URL for public display of Postgres logger
 2. change default function name for logs on Backend
@@ -7,6 +11,8 @@
 ### Aug 12, 2023
 1. Add logging feature for postgres on the frontend
 2. Fetch logs from backend.
+3. Query templates for logger
+4. Code editor for logger queries using Cloudwatch syntax
 
 ### Aug 13, 2023
 1. Add 2 mins to timeframes

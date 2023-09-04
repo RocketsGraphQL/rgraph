@@ -1,4 +1,9 @@
 
+### Aug 15, 2023
+1. Add demo URL for public display of Postgres logger
+2. change default function name for logs on Backend
+3. add demo url to prod env
+
 ### Aug 12, 2023
 1. Add logging feature for postgres on the frontend
 2. Fetch logs from backend.

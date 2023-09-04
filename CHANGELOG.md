@@ -96,6 +96,32 @@ This is the first stable release of [Rocketgraph](https://rocketgraph.io/). It c
 3. Change access keys
 4. new env variables for serverless
 
+### Jul 6, 2023
+
+1. Improved serverless pane
+2. Improved general UI
+3. Added live payment keys
+4. Added live instance update API
+
+* make commits look better
+* remove compiled code
+* update gitignore
+* update template version for new deployments
+* add gtag
+
+* fix payments and subscription
+
+* fixes
+
+* checkout page and price update
+
+* Copy to clipboard and Hasura icon
+
+* active state for Hasura icon
+
+* back button
+
+
 ### May 19, 2023
 1. add headers to requests
 2. Function roles

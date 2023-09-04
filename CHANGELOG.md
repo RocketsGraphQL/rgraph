@@ -87,5 +87,17 @@ This is the first stable release of [Rocketgraph](https://rocketgraph.io/). It c
 - New code animations for landing page
 - Mobile responsive landing page
 
+# <a id="my-header"></a>
+
+### Jul 27, 2023
+
+1. Updated Queries and mutations to small cased convention
+2. New trail period
+3. Change access keys
+4. new env variables for serverless
+
+
+### Jul 6, 2022
+
 
 

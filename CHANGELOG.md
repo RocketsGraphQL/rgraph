@@ -96,7 +96,25 @@ This is the first stable release of [Rocketgraph](https://rocketgraph.io/). It c
 3. Change access keys
 4. new env variables for serverless
 
-### Jul 6, 2023
+### May 19, 2023
+1. add headers to requests
+2. Function roles
+3. New API endpoints for serverless
+
+### May 18, 2023
+1. Registration service for registering endpoints for customer's projects
+
+### May 12, 2023
+1. Added hooks for AWS RDS and EC2 booting events
+2. Coupled routes based on functionality
+3. Changed AWS credentials
+3. Project creation workflow
+
+### Apr 25, 2023
+1. Added route for instance state update
+2. Track RDS events from AWS
+
+### Jul 6, 2022
 
 1. Improved serverless pane
 2. Improved general UI
@@ -121,21 +139,25 @@ This is the first stable release of [Rocketgraph](https://rocketgraph.io/). It c
 
 * back button
 
+### Jun 1, 2022
 
-### May 19, 2023
-1. add headers to requests
-2. Function roles
-3. New API endpoints for serverless
+Serverless functions and Serverless Github App (#6)
+1. integrated github app
+2. lists all repos it has access to,
+3. handler function for events from Github side
 
-### May 18, 2023
-1. Registration service for registering endpoints for customer's projects
+* creates a bucket
 
-### May 12, 2023
-1. Added hooks for AWS RDS and EC2 booting events
-2. Coupled routes based on functionality
-3. Changed AWS credentials
-3. Project creation workflow
+* working serverless setup, TODO: test updates to repo and trigger the Github App
 
-### Apr 25, 2023
-1. Added route for instance state update
-2. Track RDS events from AWS
+* connect github page
+
+* remove compiles
+
+* log error anng go back
+
+1. Add loading state to button
+2. Remove unused files
+3. Add filename to instance
+
+* tweak webhook endpoint

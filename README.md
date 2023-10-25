@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://twitter.com/RGraphql">
-    <img alt="Logo" src="./images/Light.png" />
+    <img alt="Logo" src="https://production-customer-site-public.s3.us-east-2.amazonaws.com/Light.png" />
   </a>
 </p>
 <h1 align="center">
@@ -27,7 +27,7 @@
 </p>
 
 <p>
-  <img src="./images/rocketgraph_dashboard_15fps.gif" width="100%">
+  <img src="https://production-customer-site-public.s3.us-east-2.amazonaws.com/rocketgraph_dashboard.gif" width="100%">
 </p>
 
 <br />
@@ -38,12 +38,14 @@
 
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
+- [Postgres logger](#postgres-logs-using-pgaudit)
+- [Self-hosting](#run-on-your-machine-self-hosted)
 - [Docs](http://docs.rocketgraph.io/)
 - [Join Community](https://discord.gg/YHVnZ5WT)
 
 # Introduction
 
-<img src="./images/code.png"/>
+<img src="https://production-customer-site-public.s3.us-east-2.amazonaws.com/code_example.gif"/>
 
 <br />
 
@@ -98,7 +100,7 @@ This guide helps you get started with rocketgraph and setting up your backend in
 ### Create account
 Your first instance is free for 14 days. No credit card.
 So go to [the signup page](https://rocketgraph.io/signup) and create account. Then on the dashboard click new project. Wait for a few seconds for the instance to boot up and load the software.
-<img src="./images/signup.png"/>
+<img src="https://production-customer-site-public.s3.us-east-2.amazonaws.com/demo-full.gif"/>
 
 ### Project setup
 You can see your hasura console url. There you can manage your database.
@@ -114,7 +116,7 @@ And links to your Backend URLs
 For your front-end, you can start with the already provided [examples](https://github.com/RocketsGraphQL/example-setups). Just download and `npm run dev`. `todos` is without authentication, `auth` is with authentication.
 
 <p align="center">
-<img align="center" src="./images/rocketgraph_dashboard_15fps.gif"/>
+<img align="center" src="https://production-customer-site-public.s3.us-east-2.amazonaws.com/rocketgraph_dashboard.gif"/>
 </p>
 <br />
 
@@ -210,7 +212,7 @@ export default function Application() {
 In your logs dasboard you can write complex queries to query your logs. Use [cloudwatch logs syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html)
 
 <p>
-  <img src="./images/logger_demo.gif" width="100%">
+  <img src="https://production-customer-site-public.s3.us-east-2.amazonaws.com/logger.gif" width="100%">
 </p>
 
 

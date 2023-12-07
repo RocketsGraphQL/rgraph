@@ -26,7 +26,7 @@
   <a href="https://twitter.com/RGraphql"><img src="https://img.shields.io/badge/release-v0.3.0-success" alt="Release"></a>
 </p>
 
-![signup_api](./images/signup_api.gif)
+![signup_api](./images/title_image.png)
 
 <br />
 

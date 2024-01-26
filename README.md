@@ -210,7 +210,21 @@ export default function Application() {
 In your logs dasboard you can write complex queries to query your logs. Use [cloudwatch logs syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html)
 
 <p>
-  <img src="https://production-customer-site-public.s3.us-east-2.amazonaws.com/logger.gif" width="100%">
+  <img src="./images/logger_demo.gif" width="100%">
+</p>
+
+## Rocketgraph Edge functions
+
+Install Rgraph CLI v0.1.10
+
+<p>
+  <img src="./images/rgraph_install.gif" width="100%">
+</p>
+
+Deploy your edge functions with `rgraph deploy <project_name>`
+
+<p>
+  <img src="./images/deploy_lambda.gif" width="100%">
 </p>
 
 

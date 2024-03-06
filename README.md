@@ -205,6 +205,26 @@ export default function Application() {
 
 ```
 
+## AI Chatbots powered by pgVector and OpenAI:
+
+First enter your documentation URL to train your chatbot:
+
+<p>
+  <img src="./images/show_training.gif" width="100%">
+</p>
+
+You can test out your chatbot:
+
+<p>
+  <img src="./images/test_chatbot.gif" width="100%">
+</p>
+
+get your embed code that you can embed in your own website:
+
+<p>
+  <img src="./images/copy_embed_code_showcase.gif" width="100%">
+</p>
+
 ## Postgres Logs using pgAudit
 
 In your logs dasboard you can write complex queries to query your logs. Use [cloudwatch logs syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html)

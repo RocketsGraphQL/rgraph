@@ -30,7 +30,16 @@
 
 <br />
 
-**Rocketgraph** gives superpowers to your web applications. Get Authentication, realtime GraphQL, Serverless functions and a Postgres DB right from day 0. When you create a project on [rocketgraph](https://rocketgraph.io/) you are provided with [Postgres Instance](https://www.postgresql.org/), [Hasura console](https://hasura.io/) to get a GraphQL API and manage granular authorisation rules, Automated backend deployments with Git, and a full blown authentication system built in. It uses the open-source [Hasura Batteries](https://github.com/RocketsGraphQL/hasura-batteries) to power it's authentication service.
+**Rocketgraph** gives superpowers to your web applications. Get Authentication, Postgres Database pre-configured, GraphQL console, AI Chatbots and Server-less function right from day 0. When you create a project on [rocketgraph](https://rocketgraph.io/) you are provided with [Postgres Instance](https://www.postgresql.org/), [Hasura console](https://hasura.io/) to get a GraphQL API and manage granular authorisation rules, automated server-less deployments with Git, and a full blown authentication system built in. It uses the open-source [Hasura Batteries](https://github.com/RocketsGraphQL/hasura-batteries) to power it's authentication service. In addition you also get an AI chatbot that is trained on the documentation provided by you. 
+
+**🎉What's new?**
+
+Checkout how to train your own AI Chatbot. Just provide the documentation URL and it'll scrape the URL, tokenize the text and train an AI chatbot that can answer your user's questions.
+
+<p>
+  <img src="./images/show_training.gif" width="100%">
+</p>
+
 
 ## Table of contents
 
